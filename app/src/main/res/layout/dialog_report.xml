@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:padding="25dp"
+    android:layout_gravity="center">
+
+    <!-- Jenis Kecelakaan -->
+    <TextView
+        android:id="@+id/tvJenisKecelakaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kecelakaan"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Deskripsi -->
+    <TextView
+        android:id="@+id/tvDeskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi Kecelakaan"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Tanggal -->
+    <TextView
+        android:id="@+id/tvTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal: 01-12-2024"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Foto -->
+    <ImageView
+        android:id="@+id/ivFoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"
+        android:outlineProvider="background"/>
+
+    <!-- Tombol Tutup -->
+    <Button
+        android:id="@+id/btnTutup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tutup"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:background="@drawable/action_btn_background"/>
+
+</LinearLayout>

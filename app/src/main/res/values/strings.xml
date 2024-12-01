@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AplikasiLaporKecelakaan</string>
+    <string name="google_maps_key">AIzaSyBcmZPWJd3DwEzQNOSDxF8Og3XkwfFddwA</string>
+    <string-array name="jenis_kecelakaan_array">
+        <item>Kecelakaan Ringan</item>
+        <item>Kecelakaan Sedang</item>
+        <item>Kecelakaan Berat</item>
+        <item>Kecelakaan Fatal</item>
+    </string-array>
+
+    <!-- Zoom In -->
+    <string name="zoom_in">Zoom In</string>
+
+    <!-- Zoom Out -->
+    <string name="zoom_out">Zoom Out</string>
+</resources>

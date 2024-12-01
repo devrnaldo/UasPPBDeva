@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Map Fragment -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Tombol Zoom In -->
+    <ImageButton
+        android:id="@+id/btnZoomIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="194dp"
+        android:src="@drawable/ic_zoom_in"
+        android:background="@drawable/zoom_btn_background"
+        android:contentDescription="@string/zoom_in"
+        android:elevation="2dp"/>
+
+    <!-- Tombol Zoom Out -->
+    <ImageButton
+        android:id="@+id/btnZoomOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="507dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="137dp"
+        android:src="@drawable/ic_zoom_out"
+        android:background="@drawable/zoom_btn_background"
+        android:contentDescription="@string/zoom_out"
+        android:elevation="2dp"/>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewReports"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnLaporKecelakaan"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tombol Lapor Kecelakaan -->
+    <Button
+        android:id="@+id/btnLaporKecelakaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="60dp"
+        android:text="Lapor Kecelakaan"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_background"
+        android:textAllCaps="false"
+        android:elevation="6dp" />
+
+</RelativeLayout>

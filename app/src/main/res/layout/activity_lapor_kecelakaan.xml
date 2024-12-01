@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:background="#F7F7F7">
+
+    <!-- Teks Judul di atas kiri -->
+    <TextView
+        android:id="@+id/judulForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form Lapor Kecelakaan"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerJenisKecelakaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner_background"
+        android:padding="12dp"
+        android:spinnerMode="dropdown"
+        android:dropDownVerticalOffset="50dp"
+        android:popupBackground="@drawable/rounded_corner_background"
+        android:layout_below="@id/judulForm" />
+
+
+    <!-- EditText untuk deskripsi kecelakaan -->
+    <EditText
+        android:id="@+id/etDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi Kecelakaan"
+        android:layout_below="@id/spinnerJenisKecelakaan"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:background="@drawable/rounded_corner_background"
+        android:textColor="#333333"
+        android:textColorHint="#888888" />
+
+    <!-- Button untuk mengunggah foto dengan icon -->
+    <Button
+        android:id="@+id/unggahFotoButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Ambil Foto"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/etDeskripsi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/action_btn_background"
+        android:drawableLeft="@drawable/ic_upload"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:drawablePadding="1dp"
+        android:textAllCaps="false"/>
+
+
+    <!-- ImageView untuk menampilkan foto -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/unggahFotoButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:background="@drawable/rounded_corner_background"
+        android:scaleType="centerCrop" />
+
+    <!-- Button untuk mengirim form laporan -->
+    <Button
+        android:id="@+id/kirimFormButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Kirim Laporan"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/action_btn_background"
+        android:textAllCaps="false" />
+</RelativeLayout>
