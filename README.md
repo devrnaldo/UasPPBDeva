@@ -19,7 +19,7 @@ Aplikasi **Laporan Kecelakaan** ini dibuat untuk memungkinkan pengguna melaporka
 
 ## Persyaratan
 
-- **Android 7.0 (API level 24)** atau lebih tinggi.**
+- **Android 7.0 (API level 24) atau lebih tinggi.**
 - **Graddle 8.9**
 
 ## Video Running Aplikasi
