@@ -22,6 +22,11 @@ Aplikasi **Laporan Kecelakaan** ini dibuat untuk memungkinkan pengguna melaporka
 - **Android 7.0 (API level 24)** atau lebih tinggi.**
 - **Graddle 8.9**
 
+## Video Running Aplikasi
+[![Watch the video](https://img.youtube.com/vi/9sQTCywxk0c/maxresdefault.jpg)](https://youtu.be/9sQTCywxk0c)
+
+### [Lihat di Youtube](https://youtu.be/9sQTCywxk0c)
+
 ## Informasi
 Aplikasinya/tugasnya saya push ke repo ini secara berkala ya pak sampai dengan batas deadline.
 
